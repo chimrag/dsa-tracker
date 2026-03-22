@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSA Mastery Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+
+    <!-- SIDEBAR -->
+    <aside id="sidebar">
+      <div class="sidebar-top">
+        <div class="logo">
+          <span class="logo-icon">◈</span>
+          <div>
+            <div class="logo-title">DSA Tracker</div>
+            <div class="logo-sub">Campus Placement Prep</div>
+          </div>
+        </div>
+        <div class="overall-ring" id="overall-ring">
+          <svg viewBox="0 0 48 48" class="ring-svg">
+            <circle cx="24" cy="24" r="19" class="ring-bg" />
+            <circle cx="24" cy="24" r="19" class="ring-fill" id="ring-fill" />
+          </svg>
+          <div class="ring-label">
+            <span id="ring-pct">0%</span>
+            <span class="ring-sub">done</span>
+          </div>
+        </div>
+      </div>
+
+      <nav class="topic-nav" id="topic-nav">
+        <!-- filled by JS -->
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="quick-stats" id="quick-stats"></div>
+        <button class="reset-all-btn" id="reset-all-btn">Reset all progress</button>
+      </div>
+    </aside>
+
+    <!-- HAMBURGER for mobile -->
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- MAIN -->
+    <main id="main">
+      <div id="home-view" class="view active"></div>
+      <div id="topic-view" class="view"></div>
+    </main>
+
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
