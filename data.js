@@ -4,7 +4,7 @@
 // Each section has: title, questions[]
 // Each question has: name, tag ("easy"|"medium"|"hard"), concept, leetcode (url)
 
-const topics = [
+const TOPICS = [
   {
     id: "arrays",
     name: "Arrays & Strings",
